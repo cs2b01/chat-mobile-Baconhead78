@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".RegistroActivity">
 
 
     <LinearLayout
@@ -15,25 +14,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CSB01 CHAT"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="201810649 - Gonzalo Alfaro Caso"/>
-
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="349dp"
+            android:layout_height="184dp"
+            app:srcCompat="@drawable/user" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,26 +48,52 @@
                 android:hint="Contraseña"
                 />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellido"
+                />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegistrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onBtnLoginClicked"
-                android:text="Login"
-                android:textSize="20sp" />
+
+                android:text="Registrate"
+                android:textColorHighlight="#03A9F4"
+                android:textColorLink="#5BB0DB"
+                android:textSize="24sp" />
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"/>
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
